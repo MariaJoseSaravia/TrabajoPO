@@ -30,7 +30,7 @@ body {
 }
 .main {
   grid-area: main;
-  background-color: rgba(3, 100, 100, 0.408);
+  background-color: rgb(2, 35, 100);
 }
 .article {
   grid-area: article;
@@ -64,4 +64,69 @@ body {
     "footer";
   }
 }
+/*estilod de la pagina experiencias*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.8fr);
+  grid-template-rows: repeat(4, 0.6fr) ;
+  gap: 10%;
+  grid-template-areas: 
+  "  .   tarj1   .  "
+  "tarj2 tarj1 tarj3"
+  "tarj2 tarj4 tarj3"
+  "  .   tarj4  .   ";
+}
+.tarjeta {
+  background-color: rgba(49, 49, 176, 0.352);
+  padding: 10%;
+  border: 0.5px solid lightblue; 
+  border-top: 5px solid lightblue;  
+  border-radius: 10%;
+  box-shadow: -1px 1px 7px 0px rgba(163, 211, 239, 0.75);
+
+}
+.tarjeta:nth-of-type(1) {
+  grid-area: tarj1;
+}
+.tarjeta:nth-of-type(2) {
+  grid-area: tarj2;
+}
+.tarjeta:nth-of-type(3) {
+  grid-area: tarj3;
+}
+.tarjeta:nth-of-type(4) {
+  grid-area: tarj4;
+}
+/*Aqui hay una animacion*/
+h2 {
+  padding-bottom: 10%;  
+  color: lightblue;
+}
+.tarjeta-img {
+  box-shadow: -1px 1px 7px 0px rgba(163, 211, 239, 0.75);
+  border: 1px solid rgba(163, 211, 239, 0.75);
+  border-top: 2px solid lightblue;
+  border-radius: 10%;
+  width:60%;
+  height: 60%;
+
+}
+.tarjeta-img:hover {
+  box-shadow: -1px 5px 5px 5px rgba(210, 227, 237, 0.75); 
+ 
+}
+.tarjeta-titulo {
+  
+  font-size: smaller;
+  padding: 5%;
+  color: lightblue;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  h2 {
+    padding-bottom: 2%;
+  }
+
+}
+  
 
