@@ -1,84 +1,107 @@
+/*********    Estilos Generales *******/
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
+
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.2em;
-  min-height: 100%;
+  background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%,rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%,rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%,rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%,rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%,rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%,rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%);
+  font-family: sans-serif;
+  padding: 90px 20px 0;
 }
 
-.container > * {
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
-}
+/********** ESTILOS HEADER INDEX ***********/
+
 .header {
-  grid-area: header;
-  background-color: burlywood;
+  background-image: linear-gradient(71deg, rgba(55, 55, 55, 0.03) 0%, rgba(55, 55, 55, 0.03) 16.667%,rgba(111, 111, 111, 0.03) 16.667%, rgba(111, 111, 111, 0.03) 33.334%,rgba(230, 230, 230, 0.03) 33.334%, rgba(230, 230, 230, 0.03) 50.001000000000005%,rgba(129, 129, 129, 0.03) 50.001%, rgba(129, 129, 129, 0.03) 66.668%,rgba(77, 77, 77, 0.03) 66.668%, rgba(77, 77, 77, 0.03) 83.33500000000001%,rgba(190, 190, 190, 0.03) 83.335%, rgba(190, 190, 190, 0.03) 100.002%),linear-gradient(281deg, rgba(176, 176, 176, 0.03) 0%, rgba(176, 176, 176, 0.03) 16.667%,rgba(192, 192, 192, 0.03) 16.667%, rgba(192, 192, 192, 0.03) 33.334%,rgba(74, 74, 74, 0.03) 33.334%, rgba(74, 74, 74, 0.03) 50.001000000000005%,rgba(169, 169, 169, 0.03) 50.001%, rgba(169, 169, 169, 0.03) 66.668%,rgba(34, 34, 34, 0.03) 66.668%, rgba(34, 34, 34, 0.03) 83.33500000000001%,rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%),linear-gradient(196deg, rgba(98, 98, 98, 0.03) 0%, rgba(98, 98, 98, 0.03) 16.667%,rgba(208, 208, 208, 0.03) 16.667%, rgba(208, 208, 208, 0.03) 33.334%,rgba(63, 63, 63, 0.03) 33.334%, rgba(63, 63, 63, 0.03) 50.001000000000005%,rgba(180, 180, 180, 0.03) 50.001%, rgba(180, 180, 180, 0.03) 66.668%,rgba(200, 200, 200, 0.03) 66.668%, rgba(200, 200, 200, 0.03) 83.33500000000001%,rgba(59, 59, 59, 0.03) 83.335%, rgba(59, 59, 59, 0.03) 100.002%),linear-gradient(35deg, rgba(233, 233, 233, 0.03) 0%, rgba(233, 233, 233, 0.03) 16.667%,rgba(26, 26, 26, 0.03) 16.667%, rgba(26, 26, 26, 0.03) 33.334%,rgba(186, 186, 186, 0.03) 33.334%, rgba(186, 186, 186, 0.03) 50.001000000000005%,rgba(162, 162, 162, 0.03) 50.001%, rgba(162, 162, 162, 0.03) 66.668%,rgba(254, 254, 254, 0.03) 66.668%, rgba(254, 254, 254, 0.03) 83.33500000000001%,rgba(245, 245, 245, 0.03) 83.335%, rgba(245, 245, 245, 0.03) 100.002%),linear-gradient(294deg, rgba(157, 157, 157, 0.01) 0%, rgba(157, 157, 157, 0.01) 12.5%,rgba(125, 125, 125, 0.01) 12.5%, rgba(125, 125, 125, 0.01) 25%,rgba(120, 120, 120, 0.01) 25%, rgba(120, 120, 120, 0.01) 37.5%,rgba(19, 19, 19, 0.01) 37.5%, rgba(19, 19, 19, 0.01) 50%,rgba(111, 111, 111, 0.01) 50%, rgba(111, 111, 111, 0.01) 62.5%,rgba(140, 140, 140, 0.01) 62.5%, rgba(140, 140, 140, 0.01) 75%,rgba(114, 114, 114, 0.01) 75%, rgba(114, 114, 114, 0.01) 87.5%,rgba(94, 94, 94, 0.01) 87.5%, rgba(94, 94, 94, 0.01) 100%),linear-gradient(19deg, rgba(217, 217, 217, 0.02) 0%, rgba(217, 217, 217, 0.02) 20%,rgba(105, 105, 105, 0.02) 20%, rgba(105, 105, 105, 0.02) 40%,rgba(252, 252, 252, 0.02) 40%, rgba(252, 252, 252, 0.02) 60%,rgba(1, 1, 1, 0.02) 60%, rgba(1, 1, 1, 0.02) 80%,rgba(232, 232, 232, 0.02) 80%, rgba(232, 232, 232, 0.02) 100%),linear-gradient(90deg, rgb(22, 94, 235),rgb(126, 195, 9));
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
+
 .nav {
-  grid-area: nav;
-  background-color: rgba(222, 222, 161, 0.614);
-   
-  
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
 }
-.main {
-  grid-area: main;
-  background-color: rgb(2, 35, 100);
- 
+
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
-.article {
-  grid-area: article;
-  background-color: rgba(185, 248, 232, 0.683);
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 130px;
 }
-.footer {
-  grid-area: footer;
-  background-color: rgba(46, 45, 43, 0.395);
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
 }
-.container  {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto;
-  grid-template-rows: 10% 10% 60% 20%;
-  grid-template-areas:
-    "header header header header header"
-    "nav nav nav nav nav"
-    "main main main main article"
-    "footer footer footer footer footer";
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
 }
-@media screen and (max-width: 600px) {
-  .container {
-    display: grid;    
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:   
-    "header"
-    "nav"
-    "main"
-    "article"
-    "footer";
-  }
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
 }
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #1493ee;
+  transition: 0.5s;}
+   /* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none; 
+}
+ /* TOGGLE */
+ .nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;}
 /*estilod de la pagina experiencias*/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 0.8fr);
+  gap:2%;
+  align-items: center; 
+  justify-content: center; 
+  grid-template-columns: repeat(4, 0.6fr) ;
   grid-template-rows: repeat(4, 0.6fr) ;
-  gap: 10%;
   grid-template-areas: 
-  "  .   tarj1   .  "
-  "tarj2 tarj1 tarj3"
-  "tarj2 tarj4 tarj3"
-  "  .   tarj4  .   ";
+  " .    tarj2  tarj3 ."
+  ".     tarj2  tarj3  ."
+  " .    tarj5  tarj4  ."
+  "tarj1 tarj5  tarj4  .";
 }
 .tarjeta {
-  background-color: rgba(49, 49, 176, 0.352);
+  background-color: rgba(49, 49, 176, 0.169);
   padding: 10%;
   border: 0.5px solid lightblue; 
   border-top: 5px solid lightblue;  
@@ -98,38 +121,42 @@ body {
 .tarjeta:nth-of-type(4) {
   grid-area: tarj4;
 }
-/*Aqui hay una animacion*/
-h2 {
-  padding-bottom: 10%;  
-  color: lightblue;
+.tarjeta:nth-of-type(5) {
+  grid-area: tarj5;
 }
+
+
+
 .tarjeta-img {
   box-shadow: -1px 1px 7px 0px rgba(163, 211, 239, 0.75);
   border: 1px solid rgba(163, 211, 239, 0.75);
   border-top: 2px solid lightblue;
   border-radius: 10%;
-  width:60%;
-  height: 60%;
+  width:100%;
+  height: 70%;
 
 }
 .tarjeta-img:hover {
   box-shadow: -1px 5px 5px 5px rgba(210, 227, 237, 0.75); 
  
 }
-.tarjeta-titulo {
+.tarjeta-titulo { 
   
-  font-size: smaller;
-  padding: 5%;
   color: lightblue;
-  text-align: center;
+  text-align: auto;
 }
-@media screen and (min-width: 1440px) {
-  h2 {
-    padding-bottom: 2%;
-  }
-
+h1{
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 30px;
 }
+@media only screen and (max-width:600px) {
+  .grid-container {
+    display: flex;  
+    flex-direction: column;    
+}}
 /*Estilos del formulario*/
+
 .form {
   color: lightblue;
   padding: 2px;
@@ -173,6 +200,10 @@ input[type=submit]:focus {
     transition: 0.7s;
     background-color: rgb(234, 45, 202);
   }
+  
+  
+
+ 
   
   
 

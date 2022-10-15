@@ -5,12 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilosPO.css">
-
   <title>Contacto</title>
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script defer src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+ <!-- Keywords -->
+ <meta name="keywords" content="Turismo Puerto Madryn, Turismo, visitar el sur, turismo sur del pais, Puerto Madryn, sur argentino, Turismo argentina">
+
+ <!-- Description -->
+ <meta name="description" content="Pagina de turismo destinada a aquellas personas que precisan la mejor informacion de esta espectacular ciudad, no te pierdas de la diversion, experiencia, hoteleria y gastronomia de una de las mejores ciudades para visitar y recorrer, solo o acompañado">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
 </head>
-<body>
-  <main class="main">
-      <form  class="form" action="" method="GET">
+
+  <body> 
+    <header class="header">
+      <nav class="nav">
+        <a href="/index.html" class="logo nav-link"><img src="./img/logo_turismo (1).jpg" alt="logo"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="/Gastronomia.html" class="nav-menu-link nav-link">Gastronomia</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Experiencia.html" class="nav-menu-link nav-link">Experiencias</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Alojamiento.html" class="nav-menu-link nav-link">Alojamiento</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <form  class="form" action="" method="GET">
       <fieldset>
       <legend class="legend">Formulario de contacto:</legend>
       <label for="nombre">Nombre</label>
@@ -44,8 +85,57 @@
 
     </form>
   
+       
   </main>
+  <footer class="footer">
+    <div class="container-box">
+        <div class="box-1">
+          <h6>Nosotros</h6>
+          <p class="text-justify">Puerto Madryn<i>VIVE TU EXPERERIENCIA A OTRO NIVEL </i>Somos una empresa de larga trayectoria dedicada al turismo, contamos con la experiencia propia y de los viajeros que con gusto nos proporcionan informacion de su estadia. Vas a encontrar todo lo necesario para que disfrutes unas maravillosas vacaciones.</p>
+        </div>
 
+        <div class="box-2">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a href="#">Temporadas</a></li>
+            <li><a href="#">Naturaleza</a></li>
+            <li><a href="#">Turismo Aventura</a></li>
+            <li><a href="#">Cultura y entretenimiento</a></li>
+            <li><a href="#">Agencias de viaje</a></li>
+            <li><a href="#">Todas las novedades</a></li>
+          </ul>
+        </div>
+
+        <div class="box-3">
+          <h6>Accede de forma rapida</h6>
+          <ul class="footer-links">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Como llegar</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      <hr>
+    </div>
+    <div class="container-1">
+        <div class="copy">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#">Puerto Madryn Travel</a>.
+          </p>
+        </div>
+
+        <div class="redes">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>   
+</footer>
+  
   
 </body>
 </html>
