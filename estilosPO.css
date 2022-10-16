@@ -161,6 +161,7 @@ h1{
   color: lightblue;
   padding: 2px;
   margin:2px 5px 5px;
+  font-size: 1.2em;
 } 
 input {
   width: 20%;  
@@ -200,6 +201,16 @@ input[type=submit]:focus {
     transition: 0.7s;
     background-color: rgb(234, 45, 202);
   }
+  @media only screen and (max-width: 600px) {
+    input {
+      width: 100%;  
+      margin: 10px ;
+      bottom: border-box;  
+  }
+  .form {
+    font-size: 1em;
+  }
+}
   
   
 
