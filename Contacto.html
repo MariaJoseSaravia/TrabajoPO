@@ -23,7 +23,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  
+  <style>
+    
+    .traductor {
+      color: lightblue;
+     background-color: rgba(16, 27, 175, 0.247);
+      display:flex;
+      flex-flow: row wrap;          
+    }
+  button {  
+    border: 2px solid yellowgreen;  
+  text-align: center;
+  text-decoration: none;
+   border-radius: 10%;
+   margin: 2%;   
+  }
+  button:focus {
+    background-color: black;
+    color:beige
+  }
+  button:hover {
+    background-color: black;
+    color:beige
+  }
+  input {
+    border: 2px solid yellowgreen;         
+  }  
+  @media only screen and (max-width: 600px) {
+    .traductor {
+      display: flex;
+      flex-direction: column;
+      font-size: smaller;
+   }   
+ }
+  </style>
 </head>
 
   <body> 
@@ -82,11 +115,34 @@
       </div>
     </fieldset>  
     <input type="submit" value="Enviar">
-
     </form>
-  
-       
+   
   </main>
+  <div class="traductor">
+    <div class="español">
+   <h3>Español</h3>
+    <input type="text" id="Text" placeholder="Texto en Español" style="width:50%">
+    </div>
+    <div class="ingles">
+   <h3>Ingles</h3>
+    <input type="text" id="Result" placeholder="ver traduccion" style="width:50%">
+   </div class=button>
+    <button onclick = "traducir()">Traducir</button>
+   </div>
+   </div>  
+    <script>
+       function traducir() {
+              const text = document.getElementById('Text').value;
+              const target = 'eng';
+              const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + target + '&dt=t&q=' + encodeURI(text);
+              fetch(url)
+                  .then(response => response.json())
+                  .then(data => {
+                     document.getElementById("Result").value = data[0][0][0];
+                  })
+                  .catch(error => console.error(error))
+          }
+    </script>  
   <footer class="footer">
     <div class="container-box">
         <div class="box-1">
