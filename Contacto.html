@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilosPO.css">
+  <link rel="stylesheet" href="estilosPO.css">
   <title>Contacto</title>
   <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
   <script defer src="index.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
  <!-- Keywords -->
- <meta name="keywords" content="Rotiseria, Casa de comidas, comidas rapidas, delivery de comidas en zona sur, zona sur, rotiserias en Quilmes, Rotiseria La Abu Matie">
+ <meta name="keywords" content="Turismo Puerto Madryn, Turismo, visitar el sur, turismo sur del pais, Puerto Madryn, sur argentino, Turismo argentina">
 
  <!-- Description -->
- <meta name="description" content="Rotiseria y casa de comidas, hacemos delivery por Quilmes Oeste,Zona Sur. Vendemos viandas personalizadas, comida casera y comidas rapidas. ">
+ <meta name="description" content="Pagina de turismo destinada a aquellas personas que precisan la mejor informacion de esta espectacular ciudad, no te pierdas de la diversion, experiencia, hoteleria y gastronomia de una de las mejores ciudades para visitar y recorrer, solo o acompañado">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -27,41 +26,87 @@
 
 </head>
 
-<Body>
-  <header class="header">
-    <nav class="nav">
-      <a href="/index.html" class="logo nav-link"><img src="./img/logo_turismo (1).jpg" alt="logo"></a>
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="/Gastronomia.html" class="nav-menu-link nav-link">Gastronomia</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="/Experiencia.html" class="nav-menu-link nav-link">Experiencias</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="/Alojamiento.html" class="nav-menu-link nav-link">Alojamiento</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="/Contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
-            >Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <body> 
+    <header class="header">
+      <nav class="nav">
+        <a href="/index.html" class="logo nav-link"><img src="./img/logo_turismo (1).jpg" alt="logo"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="/Gastronomia.html" class="nav-menu-link nav-link">Gastronomia</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Experiencia.html" class="nav-menu-link nav-link">Experiencias</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Alojamiento.html" class="nav-menu-link nav-link">Alojamiento</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="/Contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
+              >Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    
+    <form  class="form" action="" method="GET">
+      <fieldset>
+      <legend class="legend">Formulario de contacto:</legend>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa aqui tu nombre..">
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Ingresa aqui tu apellido..">
+      <legend>Domicilio:</legend>     
+      <label for="calle">Calle</label>
+      <input type="text" id="calle" name="calle" placeholder="Ingresa aqui tu calle.." >
+      <label for="numeracion">Numero</label>    
+      <input type="text" id="numeracion" name="numeracion" placeholder="Ingresa aqui tu numeracion.."><br>
+      <label for="piso">Piso</label>
+      <input type="text" id="piso" name="piso" placeholder="Ingresa aqui tu piso..">
+      <label for="localidad">Localidad</label>
+      <input type="text" id="localidad" name="localidad" placeholder="Ingresa aqui tu localidad.."><br>
+      <label for="tel">Telefono</label>
+      <input type="tel" id="tel" name="tel" placeholder="Ingresa aqui tu tel..">         
+      <label for="email">Ingrese su email</label>
+      <input type="email" id="email" name="email" placeholder="---@---.com">          
+    
+    <fieldset> 
+      <legend>¿Desea recibir informacion?:</legend> 
+      <div class="radio">
+      <input type="radio" id="si" name="informacion" value="si" checked>
+      <label for="html">Si</label>
+      <input type="radio" id="no" name="informacion" value="no">
+      <label for="css">No</label>
+      </div>
+    </fieldset>  
+    <input type="submit" value="Enviar">
+    </form>
+   
+  </main>
 
-    <main>
-        Gastronomia
-    </main>
+  <div class="traductor">
+    <div class="español">
+   <h3>Español</h3>
+    <input type="text" id="Text" placeholder="Texto en Español" style="width:70%">
+    </div>
+    <div class="ingles">
+   <h3>Ingles</h3>
+    <input type="text" id="Result" placeholder="ver traduccion" style="width:70%">
+   </div class=button>
+    <button  onclick = "traducir()">Traducir</button>
+   </div>
+   </div>  
+    
 
-       <!--footer -->
    <footer class="footer">
     <div class="container-box">
         <div class="box-1">
           <h6>Nosotros</h6>
-          <p class="text-justify">Puerto Madryn<i>VIVE TU EXPERERIENCIA A OTRO NIVEL </i>Somos una empresa de larga trayectoria dedicada al turismo, contamos con la experiencia propia y de los viajeros que con gusto nos proporcionan informacion de su estadia. Vas a encontrar todo lo necesario para que disfrutes unas maravillosas vacaciones.</p>
+          <p class="text-justify">Puerto Madryn <br> <i>VIVE TU EXPERERIENCIA A OTRO NIVEL</i> <br> Somos una empresa de larga trayectoria dedicada al turismo, contamos con la experiencia propia y de los viajeros que con gusto nos proporcionan informacion de su estadia. Vas a encontrar todo lo necesario para que disfrutes unas maravillosas vacaciones.</p>
+          
         </div>
 
         <div class="box-2">
@@ -83,7 +128,6 @@
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Como llegar</a></li>
             <li><a href="#">Politica de Privacidad</a></li>
-            <li><a href="#">Sitemap</a></li>
           </ul>
         </div>
       <hr>
@@ -97,16 +141,19 @@
 
         <div class="redes">
           <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            <li><a class="facebook" href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://www.whatsapp.com/?lang=es"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>   
           </ul>
         </div>
       </div>   
 </footer>
-
-</Body>
-
-
-</html>  
+  
+  
+</body>
+</html>
+  
+  
+</body>
+</html>
