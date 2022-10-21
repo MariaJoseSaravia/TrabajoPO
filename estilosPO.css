@@ -496,6 +496,76 @@ border: 2px solid yellowgreen;
   
 }  
 
+/************************************ ESTILOS ALOJAMIENTO *************************/
+
+.h1-alojamiento {
+  margin-top: 5%;
+  text-align: center;
+  color: cadetblue;
+}
+.main-img-alojamiento{
+  /*background-position: left;*/
+  background-size: cover;
+  width: 100%;
+  height: 100;
+  opacity: 0.5;
+}
+main .h2-hotel{
+  margin-top: 3%;
+  text-align: center;
+  padding-bottom: 4%;
+}
+main .h2-Hostel{
+  text-align: center;
+  padding-bottom: 4%;
+}
+main .h2-Complejos{
+  text-align: center;
+  padding-bottom: 4%;
+}
+section{
+  display: flex;
+  justify-content: center;
+  /*justify-content: space-between;*/
+}
+section .section-div-alojamiento{
+  border: 5px solid cadetblue;
+  /*margin-top: 5%;*/
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: cadetblue;
+  color:white;
+}
+.titulo-dondeAloj {
+  position: absolute;
+ top: 140px;
+ left: 30px;
+ 
+}
+.hoteles{
+  position: absolute;
+ top: 180px;
+ left: 40px;
+ color: lightblue;  
+ text-decoration: none;
+}
+.hostel{
+  position: absolute;
+ top: 210px;
+ left: 40px;
+ color: lightblue;  
+ text-decoration: none;
+}
+.complejo{
+  position: absolute;
+ top: 240px;
+ left: 40px;
+ color: lightblue;  
+ text-decoration: none;
+}
+
+
 
 
 
