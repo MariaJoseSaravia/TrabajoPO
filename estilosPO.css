@@ -121,8 +121,9 @@ body {
 
 .link {
   display:flex;
-  text-align: center;
-  padding: 10px 20px;
+  text-align: left;
+  width: 100%;
+  padding: 5px 20px;
   
 }
 
@@ -139,22 +140,25 @@ body {
            
 }
 
+
 .bottom {
-  background-color: #063ffc;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  color:#ffffff;
-  text-decoration: none;
-  border: 3px solid #2c3e50;
-  border-radius: 30%;
-  text-transform:uppercase;
-  cursor: pointer;
+font-weight: 600;
+font-size: 23px;
+color:#faf5f5;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:40px;
+padding-right:40px;
+background-color:#1995fa;
+border: 3px solid #020007;
+border-radius:35px;
+text-decoration: none;
+cursor: pointer;
 }
 
 .bottom:hover {
-  background: #83c5f7;
+  background: #01080e;
+  border: 5px solid #1f70e9;
 }
 
 /*****************     ESTILOS FOOTER GENERAL       ****************/
@@ -310,7 +314,7 @@ footer h6 {
 }
 
 .social-icons a.facebook:hover {
-  background-color:#3b5998;
+  background-color:#420691;
 }
 
 .social-icons a.twitter:hover {
@@ -318,11 +322,11 @@ footer h6 {
 }
 
 .social-icons a.instagram:hover {
-  background-color:#007bb6;
+  background-color:#d822cf;
 }
 
 .social-icons a.dribbble:hover {
-  background-color:#ea4c89;
+  background-color:#11cc0a;
 }
 
 .social-icons li.title {
@@ -337,8 +341,10 @@ footer h6 {
 
 .tarjeta-animada h1 {
   padding-bottom: 10%;  
-  color: lightblue;
+  color: #edf1f1;
+  font-size: 50px;
   margin-top: 5%;
+  font-family:'Satisfy', cursive;
 }
 
 .grid-container {
@@ -409,9 +415,11 @@ footer h6 {
 /***************** FORMULARIO - CONTACTO ********************/
 
 .form {
-  color: lightblue;
+  
+  background-color:#fff;
+  color: rgb(9, 10, 10);
   padding: 2px;
-  margin:2px 5px 5px;
+  margin:2px 5px 5px 15px;
   font-size: 1.2em;
 } 
 
@@ -435,7 +443,7 @@ legend {
 }
 
 input:focus {
-  background-color: lightblue;
+  background-color: rgb(219, 246, 255);
   padding: 10px;
 }
 
@@ -465,14 +473,14 @@ input[type=submit]:focus {
  /*********** TRADUCTOR - API **********/
  
  .traductor {
-  color: lightblue;
-  background-color: rgba(16, 27, 175, 0.247);
+  color:#ffffff;
+  background-color:#96a2b2;
   display:flex;
   flex-flow: row wrap;          
 }
 
-button {  
-width:10%;
+.button-1 {  
+width:100px;
 height: 40%;
 border: 2px solid yellowgreen;  
 text-align: center;
@@ -481,12 +489,12 @@ border-radius: 15%;
 margin: 2%;   
 }
 
-button:focus {
+.button-1 :focus {
 background-color: black;
 color:beige
 }
 
-button:hover {
+.button-1:hover {
 background-color: black;
 color:beige
 }
@@ -499,9 +507,12 @@ border: 2px solid yellowgreen;
 /************************************ ESTILOS ALOJAMIENTO *************************/
 
 .h1-alojamiento {
-  margin-top: 5%;
+  margin-top: 6%;
   text-align: center;
-  color: cadetblue;
+  color: #f4fbfc;
+  font-family:'Satisfy', cursive;
+  font-size: 60px;
+  margin-bottom: 10%;
 }
 .main-img-alojamiento{
   /*background-position: left;*/
@@ -529,40 +540,154 @@ section{
   /*justify-content: space-between;*/
 }
 section .section-div-alojamiento{
-  border: 5px solid cadetblue;
+  border: 5px solid #eff5f5;
   /*margin-top: 5%;*/
   margin-bottom: 25px;
   margin-left: 50px;
   margin-right: 50px;
-  background-color: cadetblue;
+  background-color: rgb(77, 226, 236);
   color:white;
 }
 .titulo-dondeAloj {
   position: absolute;
- top: 140px;
+ top: 110px;
  left: 30px;
+ font-family:'Satisfy', cursive;
+ font-size: 2em;
+ color:#83c5f7;
+ 
  
 }
 .hoteles{
   position: absolute;
- top: 180px;
+ top: 160px;
  left: 40px;
- color: lightblue;  
+ color: #e0edf1;  
  text-decoration: none;
+ font-family:'Satisfy', cursive;
+ font-size: 1.5em;
 }
 .hostel{
   position: absolute;
  top: 210px;
  left: 40px;
- color: lightblue;  
+ color: #e7eff1;  
  text-decoration: none;
+ font-family:'Satisfy', cursive;
+ font-size: 1.5em;
 }
 .complejo{
   position: absolute;
- top: 240px;
+ top: 270px;
  left: 40px;
- color: lightblue;  
+ color: #e3eff3;  
  text-decoration: none;
+ font-family:'Satisfy', cursive;
+ font-size: 1.5em;
+ 
+}
+
+/**********************   ESTILOS " COMO LLEGAR "   ************/
+
+.main-2 {
+  margin-top: 60px;
+    background-image: url(img/vivir-viajando.jpg);
+    padding: 400px 100px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .main-2:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .subtitulo h1 {
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+  }
+  
+.subtitulo {
+  text-align: left;
+  color:#fff;
+  margin-top: -20%;
+}
+
+
+.subtitulo h2 {
+  margin-top: 200px;
+  font-size: 30px;
+  color: #fff;
+    position: relative;
+}
+
+.transporte {
+ background-color: #fff;
+ color:#01080e;
+
+  
+  margin-bottom: 5%;
+}
+
+.transporte-1 .buttom {
+  text-decoration: none; 
+}
+
+.transporte-1 ul h3 {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.h4 {
+  margin-top: 5%;
+}
+
+.caja {
+  margin-top: 7%;
+  padding:15px;
+  margin-right: 20px;
+  
+}
+
+/************************  GASTRONOMIA   ************************/
+
+.restaurantes {
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-size: 100px;
+  color:#faf5f5;
+  font-family:'Satisfy', cursive;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  /*justify-content: space-between;*/
+}
+
+section .section-div-gastronomia{
+  border: 5px solid #4bf5f5;
+  /*margin-top: 5%;*/
+  margin-bottom: 35px;
+  margin-left: 60px;
+  margin-right: 50px;
+  background-color: #f3fafa;
+  color:#01080e;
+}
+
+.section-div-gastronomia:hover {
+  background-color: #01080e;
+  color: #eceeef;
 }
 
 
@@ -686,22 +811,22 @@ section .section-div-alojamiento{
     }
     
     .bottom {
-      background-color: #063ffc;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 11px;
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 25px;
+      padding-right: 18px;
       color:#ffffff;
       text-decoration: none;
-      border: 3px solid #2c3e50;
       border-radius: 20%;
-      text-transform:uppercase;
       cursor: pointer;
     }
     
     .bottom:hover {
-      background: #83c5f7;
+      background: #0c0c0c;
+      border: 5px solid #1f70e9;
     }
   
   
